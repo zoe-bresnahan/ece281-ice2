@@ -99,8 +99,8 @@ begin
 	begin
 	
 		 w_sw1 <= '0'; w_sw0 <= '0'; wait for 10 ns;
-            assert w_led0 = '0' report "bad sum" severity failure;
-            assert w_led1 = '0' report "bad carry" severity failure;
+            assert w_led0 = '0' report "bad sum" severity error;
+            assert w_led1 = '0' report "bad carry" severity error;
 		-- TODO:  rest of test plan
 		
 		wait; -- wait forever
