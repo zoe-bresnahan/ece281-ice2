@@ -18,6 +18,7 @@
 !cfg/**/*.wcfg
 
 # don't ignore build files
+!*.xpr
 !build.tcl
 !build.bat
 
